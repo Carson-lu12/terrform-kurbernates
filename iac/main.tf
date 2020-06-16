@@ -21,9 +21,9 @@ master_auth {
 }
 
 resource "google_container_node_pool" "default" {
-  name = "${var.name}-node-pool"
-  project = "${var.project}"
-  location = "${var.location}"
+  name = "${var.gke_name}-node-pool"
+  project = "${var.gke_project}"
+  location = "${var.zone}"
   cluster = "${google_container_cluster.default.name}"
   node_count = 1
 
