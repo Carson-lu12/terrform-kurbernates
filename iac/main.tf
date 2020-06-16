@@ -1,9 +1,9 @@
 #Project resources
 resource "google_container_cluster" "default" {
-  name = "${var.name}}"
-  project = "${var.project}"
+  name = "${var.gke_name}}"
+  project = "${var.gke_project}"
   description = "Demo GKE cluster"
-  location = "${var.location}"
+  location = "${var.zone}"
 
 #default remove node pool
 remove_default_node_pool = true

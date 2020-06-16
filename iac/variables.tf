@@ -1,11 +1,11 @@
-variable "name" {
+variable "gke_name" {
   default = "demo-cluster"
 }
-variable "project" {
+variable "gke_project" {
   default = "myproject-280503"
 }
 
-variable "lcation" {
+variable "zone" {
   default = "asia-southeast1"
 }
 
